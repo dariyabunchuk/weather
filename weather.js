@@ -43,11 +43,11 @@ let handleWeatherResponse = function(response) {
   console.log(response)
   window.response = response
 
-  // **** your code starts here - don't modify anything else. you will be sad.
+// **** your code starts here - don't modify anything else. you will be sad.
   weather_current = response.currently
   weather = response.daily.data
 
-  // Added .empty() to refresh new appends
+// Added .empty() to refresh new appends
   $("#current-conditions-icon").empty()
   $("#current-conditions-text").empty()
   $(".forecast").empty();
